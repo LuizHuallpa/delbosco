@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  display:flex;
+
   padding: 0;
 
   border: 0;
@@ -74,6 +76,7 @@ nav li {
     text-align: center;
     font-family: 'GlossAndBloom';
     font-size: 4em;
+    margin: 0 20vw ;
 }
 
 
@@ -103,13 +106,15 @@ nav li {
 
 
 .sideText{
+    align-items: center;
     background-color: #fdc317;
     border-radius: 0 50% 50% 0;
     font-family: 'MonotypeCorsiva';
-    font-size: 3em;
+    font-size: 2.7em;
     padding-right: 1em;
     padding-top: 10px;
     z-index: 2;
+    padding: 40px;
 }
 
 .bordaFlores{
@@ -122,6 +127,9 @@ nav li {
 }
 
 .containerPhotos{
+    position:relative;
+    overflow:hidden;
+    flex-wrap: wrap;
     display:grid;  
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px 25px; 
