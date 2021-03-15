@@ -261,6 +261,9 @@
 
 .page6{
     background-color: #fdc317;
+    display:flex;
+    justify-items:center;
+    flex-flow: row wrap;
 
     
 }
@@ -272,7 +275,14 @@
     padding:20px;
 }
 
+.formPai{
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+
 .formulario{
+    
     margin:20px;
     padding:20px;
     border-radius: 50px;
@@ -283,6 +293,8 @@
     flex-shrink: 1;
     flex-wrap: wrap;
     align-items:center;
+    width:600px;
+    justify-self:center;
 
 
 }
@@ -297,9 +309,11 @@
     flex:80%;
     margin:10px;
     border-radius: 15px;
+    min-height:40px;
 }
 
 .socialMedia{
+    flex:100%;
     display:flex;
     flex-grow: 0;
     flex-shrink: 1;
