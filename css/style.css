@@ -1,19 +1,12 @@
-html {
-  scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  display:flex;
-
-  padding: 0;
-
-  border: 0;
- 
-}
 
 .container{
     padding: 0;
-
     border: 0;
    
 }
@@ -32,7 +25,7 @@ body {
     src:  url('../fonts/MTCORSVA.TTF'); 
 }
 
-nav {
+.navbarTop {
   width: 100%;
 
   display: flex;
@@ -41,20 +34,22 @@ nav {
 
   font-family: 'MonotypeCorsiva';
 
-  color: white;
+  color: white!important;
 
   justify-content: space-between;
 }
 
-nav a {
+.navbarTop a {
   margin: auto 10px auto 10px;
 
   text-decoration: none;
 
   font-size: 1.5em;
+
+  color: white!important;
 }
 
-nav li {
+.navbarTop li {
   float: left;
 
   list-style: none;
@@ -70,6 +65,59 @@ nav li {
   height: auto;
 }
 
+.navbarFixa {
+    width: 100%;
+  
+    display: flex;
+  
+    z-index: 99;
+  
+    font-family: 'MonotypeCorsiva';
+  
+    padding:5px;
+  
+    justify-content: space-between;
+
+    background-color:white;
+
+    max-height:10vh;
+
+    position: fixed; 
+
+    top: -100px;
+
+    display: flex;
+    
+    align-items: center;
+
+  }
+  
+  .navbarFixa a {
+    margin: auto 10px auto 10px;
+  
+    text-decoration: none;
+  
+    font-size: 1.5em;
+  
+    color: #0a2321!important;
+  }
+  
+  .navbarFixa li {
+    float: left;
+  
+    list-style: none;
+  
+    border-right: 0.5px solid #0a2321;
+  
+    /* margin-left: 20px; */
+  }
+  
+  .logoFixo {
+    width: 5%;
+  
+    height: auto;
+  }
+
 
 .textoPrincipal{
     color: white;
@@ -82,7 +130,7 @@ nav li {
 
 
 .pageSection{
-    height: 100vh; 
+    height: 100vh!important; 
     
 }
 
@@ -100,7 +148,6 @@ nav li {
     grid-gap: 20px; 
     background-image: url("../images/Pagina2/HBR Brokers - Nazaré Paulista - Mirante 01.jpg");
     background-repeat: no-repeat;
-
     background-size: cover;
 }
 
@@ -126,13 +173,20 @@ nav li {
 
 }
 
-.containerPhotos{
+/* .containerPhotos{
     position:relative;
     overflow:hidden;
     flex-wrap: wrap;
     display:grid;  
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px 25px; 
+    padding: 40px;
+    flex-grow: 0;
+    flex-shrink: 1;
+} */
+
+
+.containerPhotos{
     padding: 40px;
 }
 
@@ -161,6 +215,7 @@ nav li {
     font-size: 3em;
     font-weight: 400;
     margin-top: 20px;
+    padding:20px;
 }
 
 .textoLocal{
@@ -174,18 +229,20 @@ nav li {
 } */
 
 .buttonRow{
+    padding: 20px;
     display:flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .mostrarMapa{
     background-color: #fdc317;
-    border-radius: 15%;
-    height:20px;
+    border-radius: 15px;
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
+    padding:15px;
 }
 
 .page5{
@@ -196,4 +253,55 @@ nav li {
 
 .page6{
     background-color: #fdc317;
+
+    
+}
+
+.tituloPage6{
+    flex:100%;
+    font-family: 'GlossAndBloom';
+    text-align:center;
+    padding:20px;
+}
+
+.formulario{
+    margin:20px;
+    padding:20px;
+    border-radius: 50px;
+    background-color:#0a2321;
+    color:white;
+    display:flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    align-items:center;
+
+
+}
+
+.tituloForm{
+    flex:80%;
+    text-align:center;
+    font-family: 'MonotypeCorsiva';
+}
+
+.itemForm{
+    flex:80%;
+    margin:10px;
+    border-radius: 15px;
+}
+
+.socialMedia{
+    display:flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-flow: row wrap;
+    text-align:center;
+    align-items:center;
+    font-size:20px;
+    justify-content:center;
+}
+
+.imgSocial{
+    width:50px;
 }
