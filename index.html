@@ -23,7 +23,7 @@
 
   <body>
     <div class="">
-      <section class="pageSection page1">
+      <section id="inicio" class="pageSection page1">
         <div id="leaves">
           <i></i>
           <i></i>
@@ -49,12 +49,12 @@
             />
           </div>
           <ul class="navList">
-            <li><a>Início</a></li>
-            <li><a>O Del Bosco</a></li>
-            <li><a>Galeria</a></li>
-            <li><a>Localização</a></li>
-            <li><a>Implantação</a></li>
-            <li><a>Contato</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#delBosco">O Del Bosco </a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#implantacao">Implantação</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
 
@@ -66,12 +66,12 @@
             />
           </div>
           <ul class="navList">
-            <li><a>Início</a></li>
-            <li><a>O Del Bosco</a></li>
-            <li><a>Galeria</a></li>
-            <li><a>Localização</a></li>
-            <li><a>Implantação</a></li>
-            <li><a>Contato</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#delBosco">O Del Bosco </a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#implantacao">Implantação</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
 
@@ -79,7 +79,8 @@
           <span>Sinta o Privilégio da Natureza</span>
         </div>
       </section>
-      <section class="pageSection page2">
+      <div class="anchor" id="delBosco"></div>
+      <section  class="pageSection page2">
         <div class="sideText">
           Del Bosco fica localizado em uma região estratégica a apenas 70Km a
           São Paulo (Capital) na cidade de Nazaré Paulista, um condomínio
@@ -87,6 +88,7 @@
         </div>
         <img class="bordaFlores" src="images/Pagina3/Ativo 6.svg" />
       </section>
+      <div class="anchor" id="galeria"></div>
       <section class="page3">
         <div class="containerPhotos">
           <div class="list-inline">
@@ -279,6 +281,7 @@
           </div>
         </div>
       </section>
+      <div class="anchor" id="localizacao"></div>
       <section class="pageSection page4">
         <div class="localTitulo">
           <h2>Localização</h2>
@@ -301,17 +304,19 @@
           <button type="button" class="mostrarMapa">Mostrar no Mapa</button>
         </div>
       </section>
-      <section class="pageSection page5"></section>
-      <section class="pageSection page6">
+      <div class="anchor" id="implantacao"></div>
+      <section  class="pageSection page5"></section>
+      <div class="anchor" id="contato" ></div>
+      <section  class="page6">
         <div class="tituloPage6"><h2>Venha conhecer e se encantar</h2></div>
         <div class="formPai">
         <div class="formulario">
           <div class="tituloForm">
             <h3>Solicite seu atendimento <strong>personalizado</strong></h3>
           </div>
-          <input type="text" class="itemForm" />
-          <input type="text" class="itemForm" />
-          <input type="text" class="itemForm" />
+          <input type="text" class="itemForm" placeholder="Nome Completo*" />
+          <input type="text" class="itemForm" placeholder="Email*" />
+          <input type="text" class="itemForm" placeholder="Telefone*" />
         </div>
       </div>
         <div class="socialMedia">
@@ -321,13 +326,18 @@
         </div>
         <div class="rodape">
           <div class="telefones">
-            <div>
-              <span>11 96476 4183</span>
+            <div class="fonesRow">
+              <img class="imgTel" src="images/Icones/telefone.svg" /><span>11 96476 4183</span>
             </div>
-            <div>
-              <span>19 3844 5654</span>
+            <div class="fonesRow">
+              <img class="imgTel" src="images/Icones/Wpp.svg" /><span>19 3844 5654</span>
             </div>
-          <div class="logos"></div>
+          </div>
+          <div class="logos">
+            <img class="imgLogos" src="images/Logo/Invest.svg" />
+            <img class="imgLogos" src="images/Logo/Ativo 25.png" />
+            <img class="imgLogos" src="images/Logo/Ativo 30.png" />
+          </div>
         </div>
       </section>
     </div>

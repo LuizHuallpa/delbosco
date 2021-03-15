@@ -327,3 +327,44 @@
 .imgSocial{
     width:50px;
 }
+
+.rodape{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.telefones{
+    flex:50;
+    font-size: 2em;
+    font-weight:bold;
+}
+
+.logos{
+    display:flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-flow: row wrap;
+    flex:50;
+}
+
+.logos img{
+ max-width: 33.3%;
+ 
+}
+
+.imgTel{
+    height: 100%;
+    height: auto;
+    width:50px;
+}
+
+.fonesRow{
+    display:flex;
+    align-items: right;
+}
+
