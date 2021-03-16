@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -9,11 +10,6 @@
     padding: 0;
     border: 0;
    
-}
-
-* {
-  box-sizing: border-box;
-  
 }
 
 @font-face {
@@ -452,3 +448,33 @@
       transform: rotate(-50deg);
     }
   }
+
+  ::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #d0cdfa;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+   }
+   :-moz-placeholder { /* older Firefox*/
+    font-size:14px;
+    color: #d0cdfa;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+   }
+   ::-moz-placeholder { /* Firefox 19+ */ 
+    font-size: 14px;
+    color: #d0cdfa; 
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+   } 
+   :-ms-input-placeholder { 
+    font-size: 14px; 
+    color: #d0cdfa;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+   }
