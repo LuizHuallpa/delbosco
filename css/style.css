@@ -26,6 +26,13 @@
     src:  url('../fonts/MTCORSVA.TTF'); 
 }
 
+.anchor{
+    display: block;
+    height: 10vh; /*same height as header*/
+    margin-top: -10vh; /*same height as header*/
+    visibility: hidden;
+}
+
 .whatsIcon{
     position:fixed;
     bottom:10px;
@@ -76,6 +83,10 @@
   width: 20%;
 
   height: auto;
+}
+
+.logo img{
+    max-height: 80%;
 }
 
 .navbarFixa {
@@ -341,7 +352,7 @@
     flex-shrink: 1;
     flex-wrap: wrap;
     align-items:center;
-    width:600px;
+    width: 700px;
     justify-self:center;
 
 
@@ -382,12 +393,13 @@
     padding:20px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 700px;
+    margin: auto;
 }
 
 .telefones{
     flex:50;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight:bold;
     border-right: 1px solid #222;
     padding-right: 20px;
