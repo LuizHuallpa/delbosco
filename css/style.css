@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    
+
 }
 
 
@@ -20,6 +23,13 @@
 @font-face {
     font-family: 'MonotypeCorsiva';
     src:  url('../fonts/MTCORSVA.TTF'); 
+}
+
+.snap{
+    scroll-snap-align: start; 
+    scroll-snap-stop: normal; 
+    scroll-margin:10vh;
+    
 }
 
 .anchor{
@@ -136,20 +146,6 @@
       padding-top: 10px;
   }
   
-.videira{
-    z-index: 999;
-    width:50%;
-    display: flex;
-   
-}
-
-.videira img{
-    z-index: 999;
-    height: 10vh;
-    margin: auto;
-    opacity: 80%;
-}
-
   .logoFixo {
     width: 5%;
   
