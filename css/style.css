@@ -206,8 +206,15 @@
     overflow: hidden;
 }
 
+.col-lg-4:hover, .col-lg-4:focus {
+    transform: translateX(5px) scale(1.1);
+    
+} 
+
+
 .col-lg-4{
     max-height:20%;
+    padding-bottom: 15px;
 }
 
 .miniImg{
@@ -272,7 +279,7 @@
 }
 
 .page6{
-    background-color: #fdc317;
+    background-color: #fdc31750 ;
     display:flex;
     justify-items:center;
     flex-flow: row wrap;
@@ -343,7 +350,6 @@
 .rodape{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
     padding:20px;
     justify-content: center;
     align-items: center;
@@ -354,6 +360,8 @@
     flex:50;
     font-size: 2em;
     font-weight:bold;
+    border-right: 1px solid #222;
+    padding-right: 20px;
 }
 
 .logos{
@@ -362,22 +370,31 @@
     flex-shrink: 1;
     flex-flow: row wrap;
     flex:50;
+    padding-left: 20px;
 }
 
 .logos img{
- max-width: 33.3%;
+ max-width: 100px;
+ height: auto;
  
 }
 
 .imgTel{
-    height: 100%;
+    
     height: auto;
     width:50px;
 }
 
 .fonesRow{
     display:flex;
-    align-items: right;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.fonesRow span{
+    margin-left: 5px;
+    text-align: justify;
+    min-width: 30%;
 }
 
 @keyframes nudge {
