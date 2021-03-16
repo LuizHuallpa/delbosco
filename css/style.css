@@ -93,12 +93,13 @@
 
 
 .sideText{
+    display: flex;
     height:100vh;
     align-items: center;
     background-color: #fdc317;
     border-radius: 0 45% 45% 0;
     font-family: 'MonotypeCorsiva';
-    font-size: 2.5rem;
+    font-size: 3rem;
     /* padding-right: 1em;
     padding-left: 20px;
     padding-top: 20px; */
@@ -310,8 +311,8 @@
 }
 
 .logos img{
- max-width: 100px;
- height: auto;
+    max-width: 100px;
+    height: auto;
  
 }
 
