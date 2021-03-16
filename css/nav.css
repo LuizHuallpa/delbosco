@@ -92,6 +92,11 @@
     .navbarFixa ul{
         padding-top: 10px;
     }
+
+
+    .navbarFixa img{
+        height:9.5vh;
+    }
     
     .logoFixo {
       width: 5%;
@@ -112,7 +117,7 @@
     }
     
     .topnavBurger img {
-        max-height: 5vh;
+        height: 5vh;
     }
     
     @media (max-width:900px) {
