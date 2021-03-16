@@ -13,6 +13,7 @@
 
 * {
   box-sizing: border-box;
+  
 }
 
 @font-face {
@@ -123,7 +124,25 @@
   
     /* margin-left: 20px; */
   }
+
+  .navbarFixa ul{
+      padding-top: 10px;
+  }
   
+.videira{
+    z-index: 999;
+    width:50%;
+    display: flex;
+   
+}
+
+.videira img{
+    z-index: 999;
+    height: 10vh;
+    margin: auto;
+    opacity: 80%;
+}
+
   .logoFixo {
     width: 5%;
   
@@ -158,24 +177,28 @@
 
 .page2{
     display:grid;  
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 3fr 6fr;
     grid-gap: 20px; 
     background-image: url("../images/Pagina2/HBR Brokers - Nazaré Paulista - Mirante 01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height:100vh;
 }
 
 
 .sideText{
+    height:100vh;
     align-items: center;
     background-color: #fdc317;
-    border-radius: 0 50% 50% 0;
+    border-radius: 0 45% 45% 0;
     font-family: 'MonotypeCorsiva';
-    font-size: 2.7em;
-    padding-right: 1em;
-    padding-top: 10px;
+    font-size: 2.5em;
+    /* padding-right: 1em;
+    padding-left: 20px;
+    padding-top: 20px; */
     z-index: 2;
     padding: 40px;
+    padding-right: 60px;
 }
 
 .bordaFlores{
@@ -185,6 +208,12 @@
     left:170px;
     /* z-index: -1; */
 
+}
+
+@media (max-width:760px){
+    .bordaFlores{
+        display:none;
+    }
 }
 
 /* .containerPhotos{
