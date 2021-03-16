@@ -495,7 +495,7 @@
     }
     
     .topnavBurger img {
-        max-height: 4vh;
+        max-height: 5vh;
     }
     
     @media (max-width:900px) {
@@ -536,6 +536,7 @@
         position: absolute;
         right: 0;
         top: 0;
+       
     }
     
     .topnavBurger a:hover {
@@ -548,4 +549,8 @@
         color: #0a2321;
         padding: 0;
     }
+
+    /* .burgerBar{
+        
+    } */
     /* Final Nav Hamburger*/
