@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/leaves.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Bootstrap-->
     <link
       rel="stylesheet"
@@ -23,13 +24,13 @@
 
   <body>
     <img
-    class="whatsIcon"
-    src="images/Icones/Wpp.svg"
-    href="https://web.whatsapp.com/send?phone=5511964764183"
-  />
+      class="whatsIcon"
+      src="images/Icones/Wpp.svg"
+      href="https://web.whatsapp.com/send?phone=5511964764183"
+    />
     <div class="">
       <section id="inicio" class="pageSection page1">
-        <div id="leaves">
+        <div class="desktop" id="leaves">
           <i></i>
           <i></i>
           <i></i>
@@ -46,12 +47,33 @@
           <i></i>
           <i></i>
         </div>
-        <div class="navbarTop">
+        <!-- Começo menu mobile -->
+
+       
+          <div class="topnavBurger">
+            <a href="#home" class="Ativo"
+              ><img src="images/Logo/logopng.png"
+            /></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <div class="itemnav"><a href="#inicio">Início</a></div>
+              <div class="itemnav"><a href="#delBosco">O Del Bosco </a></div>
+              <div class="itemnav"><a href="#galeria">Galeria</a></div>
+              <div class="itemnav"><a href="#localizacao">Localização</a></div>
+              <div class="itemnav"><a href="#implantacao">Implantação</a></div>
+              <div class="itemnav"><a href="#contato">Contato</a></div>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        
+
+        <!-- Final menu mobile -->
+        <div class="navbarTop desktop">
           <div class="logo">
-            <img
-              class="imgLogo"
-              src="images/Logo/logopng.png"
-            />
+            <img class="imgLogo" src="images/Logo/logopng.png" />
           </div>
           <ul class="navList">
             <li><a href="#inicio">Início</a></li>
@@ -63,18 +85,12 @@
           </ul>
         </div>
 
-        <div class="navbarFixa" id="navbarFixa">
+        <div class="navbarFixa desktop" id="navbarFixa">
           <div class="logoFixo" id="logoFixo">
             <img
               class="imgLogo"
               src="images/Logo/LogoDelBosco_Prancheta 1.svg"
             />
-          </div>
-          <div class="videira">
-            <img
-            class="imgVideira"
-            src="images/Logo/DuasVideiras.svg"
-          />
           </div>
           <ul class="navList">
             <li><a href="#inicio">Início</a></li>
@@ -91,7 +107,7 @@
         </div>
       </section>
       <div class="anchor" id="delBosco"></div>
-      <section  class="pageSection page2">
+      <section class="pageSection page2">
         <div class="sideText">
           Del Bosco fica localizado em uma região estratégica a apenas 70Km a
           São Paulo (Capital) na cidade de Nazaré Paulista, um condomínio
@@ -109,8 +125,7 @@
                   class="img-thumbnail"
                   src="images/Pagina4/HBR Brokers - Nazaré Paulista - Acesso.jpg"
                 /><br />
-                </a
-              >
+              </a>
             </div>
             <div data-toggle="modal" class="col-lg-4" data-target="#myModal">
               <a href="#myGallery" data-slide-to="1"
@@ -118,8 +133,7 @@
                   class="img-thumbnail"
                   src="images/Pagina4/HBR Brokers - Nazaré Paulista - Acesso.jpg"
                 /><br />
-                </a
-              >
+              </a>
             </div>
             <div data-toggle="modal" class="col-lg-4" data-target="#myModal">
               <a href="#myGallery" data-slide-to="2"
@@ -127,8 +141,7 @@
                   class="img-thumbnail"
                   src="images/Pagina4/HBR Brokers - Nazaré Paulista - Acesso.jpg"
                 /><br />
-                </a
-              >
+              </a>
             </div>
             <div data-toggle="modal" class="col-lg-4" data-target="#myModal">
               <a href="#myGallery" data-slide-to="3"
@@ -136,8 +149,7 @@
                   class="img-thumbnail"
                   src="images/Pagina4/HBR Brokers - Nazaré Paulista - Acesso.jpg"
                 /><br />
-                </a
-              >
+              </a>
             </div>
             <div data-toggle="modal" class="col-lg-4" data-target="#myModal">
               <a href="#myGallery" data-slide-to="4"
@@ -145,8 +157,7 @@
                   class="img-thumbnail"
                   src="images/Pagina4/HBR Brokers - Nazaré Paulista - Acesso.jpg"
                 /><br />
-                </a
-              >
+              </a>
             </div>
             <div data-toggle="modal" class="col-lg-4" data-target="#myModal">
               <a href="#myGallery" data-slide-to="5"
@@ -154,8 +165,7 @@
                   class="img-thumbnail"
                   src="images/Pagina4/HBR Brokers - Nazaré Paulista - Acesso.jpg"
                 /><br />
-                </a
-              >
+              </a>
             </div>
             <!--end of thumbnails-->
           </div>
@@ -316,20 +326,20 @@
         </div>
       </section>
       <div class="anchor" id="implantacao"></div>
-      <section  class="pageSection page5"></section>
-      <div class="anchor" id="contato" ></div>
-      <section  class="page6">
+      <section class="pageSection page5"></section>
+      <div class="anchor" id="contato"></div>
+      <section class="page6">
         <div class="tituloPage6"><h2>Venha conhecer e se encantar</h2></div>
         <div class="formPai">
-        <div class="formulario">
-          <div class="tituloForm">
-            <h3>Solicite seu atendimento <strong>personalizado</strong></h3>
+          <div class="formulario">
+            <div class="tituloForm">
+              <h3>Solicite seu atendimento <strong>personalizado</strong></h3>
+            </div>
+            <input type="text" class="itemForm" placeholder="Nome Completo*" />
+            <input type="text" class="itemForm" placeholder="Email*" />
+            <input type="text" class="itemForm" placeholder="Telefone*" />
           </div>
-          <input type="text" class="itemForm" placeholder="Nome Completo*" />
-          <input type="text" class="itemForm" placeholder="Email*" />
-          <input type="text" class="itemForm" placeholder="Telefone*" />
         </div>
-      </div>
         <div class="socialMedia">
           <img class="imgSocial" src="images/Icones/Insta.svg" />
           <img class="imgSocial" src="images/Icones/Face.svg" />
@@ -338,10 +348,12 @@
         <div class="rodape">
           <div class="telefones">
             <div class="fonesRow">
-              <span>11 96476 4183</span><img class="imgTel" src="images/Icones/Wpp.svg" />
+              <span>11 96476 4183</span
+              ><img class="imgTel" src="images/Icones/Wpp.svg" />
             </div>
             <div class="fonesRow">
-              <span>19  3844 5654</span><img class="imgTel" src="images/Icones/telefone.svg" />
+              <span>19 3844 5654</span
+              ><img class="imgTel" src="images/Icones/telefone.svg" />
             </div>
           </div>
           <div class="logos">
