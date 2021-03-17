@@ -39,7 +39,8 @@
   }
   
   .logo img{
-      max-height: 80%;
+      max-height: 30%;
+      position: absolute;
   }
   
   .navbarFixa {
@@ -170,6 +171,10 @@
         background-color:white ;
         color: #0a2321;
         padding: 0;
+    }
+
+    .burgerBar{
+        height:8vh;
     }
 
 

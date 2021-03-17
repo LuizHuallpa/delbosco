@@ -59,9 +59,15 @@
     text-align: center;
     font-family: 'GlossAndBloom';
     font-size: 6rem;
-    margin: 0 20vw ;
+    margin: auto;
     align-self: center;
     align-content: center;
+    height: 100vh;
+}
+
+.textoPrincipal span{
+    margin: auto;
+    padding: 20vw;
 }
 
 
@@ -201,11 +207,18 @@
 
 .mostrarMapa{
     background-color: #fdc317;
+    color:#0a2321;
     border-radius: 15px;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     padding:15px;
+}
+
+.mostrarMapa:hover{
+    background-color:  #0a2321;
+    color:#fdc317;
+
 }
 
 .page5{
@@ -219,6 +232,7 @@
     display:flex;
     justify-items:center;
     flex-flow: row wrap;
+    min-height:100vh;
 
     
 }
@@ -275,7 +289,7 @@
     flex-flow: row wrap;
     text-align:center;
     align-items:center;
-    font-size:1rem;
+    font-size: 2.5rem;
     justify-content:center;
 }
 
@@ -295,7 +309,7 @@
 
 .telefones{
     flex:50;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight:bold;
     border-right: 1px solid #222;
     padding-right: 20px;
@@ -330,8 +344,8 @@
 
 .fonesRow span{
     margin-left: 5px;
-    text-align: justify;
-    min-width: 30%;
+    text-align: right;
+    width: 50%;
 }
 
 @keyframes nudge {
