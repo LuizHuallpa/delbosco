@@ -347,9 +347,9 @@ max-height: 90%;
     padding-right: 20px;
 }
 
-@media(max-width:700px) {
+/* @media(max-width:700px) {
     .telefones{
-        width:100%;
+        width:100vw;
         padding:10px;
         justify-content:center;
         border-right: none;
@@ -357,11 +357,11 @@ max-height: 90%;
     }
 
     .logos{
-        width:100%;
+        width:100vw;
     }
 
 
-}
+} */
 
 .logos{
     height:100%;
