@@ -91,7 +91,7 @@
     display:grid;  
     grid-template-columns: 3fr 6fr;
     grid-gap: 20px; 
-    background-image: url("../images/Pagina2/HBR Brokers - Nazaré Paulista - Mirante 01.jpg");
+    background-image: url("../images/Pagina3/3d2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
@@ -191,6 +191,7 @@
     color:white;
     font-size:1.5rem;
     text-align: center;
+    max-width: 50%;
 }
 
 /* .textoLocal:first-of-type{
@@ -215,6 +216,28 @@
     padding:15px;
 }
 
+.enviar{
+    background-color: #fff;
+    color:#0a2321;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding:10px;
+    justify-self: center;
+}
+
+.enviar:hover{
+    background-color:  #0a2321;
+    color:#fdc317;
+
+}
+
+.enviarRow{
+    justify-content: center;
+    display: flex;
+}
+
 .mostrarMapa:hover{
     background-color:  #0a2321;
     color:#fdc317;
@@ -222,9 +245,13 @@
 }
 
 .page5{
-    background-image: url("../images/Pagina5/mapa.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.page5 img{
+max-height: 90%;
 }
 
 .page6{
@@ -262,6 +289,7 @@
     flex-shrink: 1;
     flex-wrap: wrap;
     align-items:center;
+    justify-content: center;
     width: 700px;
     justify-self:center;
 
@@ -275,10 +303,11 @@
 }
 
 .itemForm{
-    flex:80%;
+    width: 100%;
     margin:10px;
     border-radius: 15px;
     min-height:40px;
+    justify-self: center;
 }
 
 .socialMedia{
@@ -303,47 +332,72 @@
     padding:20px;
     justify-content: center;
     align-items: center;
-    width: 900px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .telefones{
-    flex:50;
+    width: 50%;
     font-size: 2.1rem;
     font-weight:bold;
     border-right: 1px solid #222;
     padding-right: 20px;
 }
 
+@media(max-width:700px) {
+    .telefones{
+        width:100%;
+        padding:10px;
+        justify-content:center;
+        border-right: none;
+        margin: auto;
+    }
+
+    .logos{
+        width:100%;
+    }
+
+
+}
+
 .logos{
     height:100%;
-    flex:50;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display:flex;
+    flex-direction: row;
     padding-left: 20px;
+    justify-content: center;
+    width: 50%;
     
 }
 
-.logosThird{
+.logoThird{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+    
 }
 
-.logosThird img{
-    width: 100%;
+.logoThird img{
+    width: auto;
+    padding:10px;
+    max-height: 90px;
  
 }
 
+.logo2{
+    margin-top: 5px;
+}
 .vendas img{
     width: 80px;
  
 }
 
-.logosThird span{
+.logoThird span{
     font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+   
+    justify-self: center;
  
 }
 
@@ -368,7 +422,8 @@
 .fonesRow span{
     margin-left: 5px;
     text-align: right;
-    width: 50%;
+    font-weight: bold;
+    font-size: 4.5rem;
 }
 
 @keyframes nudge {
@@ -416,3 +471,6 @@
     font-weight: bold;
    }
 
+    .img-thumbnail{
+        max-height:250px;
+    }
