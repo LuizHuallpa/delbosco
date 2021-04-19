@@ -273,7 +273,8 @@ footer {
 
 .page5 img{
 max-height: 90%;
-max-width: 100%;
+max-width: 90%;
+padding: 10px;
 }
 
 .page6{
