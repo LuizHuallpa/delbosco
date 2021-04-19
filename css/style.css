@@ -98,7 +98,7 @@ footer {
     display:grid;  
     grid-template-columns: 3fr 6fr;
     grid-gap: 20px; 
-    background-image: url("../images/Pagina3/3d2.jpeg");
+    background-image: url("../images/Pagina2/3d2bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
@@ -416,7 +416,7 @@ padding: 10px;
     }
 }
 
-.logo2{
+.logo1{
     margin-top: 5px;
 }
 .vendas img{
