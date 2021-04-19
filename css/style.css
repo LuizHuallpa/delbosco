@@ -8,7 +8,14 @@
 
 }
 
+section {
+    max-width: 100vw;
 
+}
+
+footer {
+    max-width: 100vw;
+}
 .container{
     padding: 0;
     border: 0;
