@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-behavior: proximity;
+ 
     
 
 }
@@ -108,13 +108,19 @@
     background-color: #fdc317;
     border-radius: 0 45% 45% 0;
     font-family: 'MonotypeCorsiva';
-    font-size: 2rem;
+    font-size: 2.5rem;
     /* padding-right: 1em;
     padding-left: 20px;
     padding-top: 20px; */
     z-index: 2;
     padding: 40px;
     padding-right: 60px;
+}
+
+@media (max-width:770px){
+    .sideText{
+        font-size: 1rem;
+    }
 }
 
 .bordaFlores{
@@ -192,9 +198,16 @@
 
 .textoLocal{
     color:white;
-    font-size:1.5rem;
+    font-size:2rem;
     text-align: center;
     max-width: 50%;
+}
+
+
+@media (max-width:770px){
+    .textoLocal{
+        font-size: 1.2rem;
+    }
 }
 
 /* .textoLocal:first-of-type{
@@ -340,8 +353,7 @@ max-height: 90%;
 }
 
 .telefones{
-    min-width: 50%;
-    font-size: 2.1rem;
+    width: 50%;
     font-weight:bold;
     border-right: 1px solid #222;
     padding-right: 20px;
@@ -349,13 +361,16 @@ max-height: 90%;
 
 @media(max-width:700px) {
     .telefones{
-        
+        width:100vw;
         padding:10px;
         justify-content:center;
         border-right: none;
         margin: auto;
     }
 
+    .logos{
+        width:100vw;
+    }
 
 }
 
@@ -365,7 +380,7 @@ max-height: 90%;
     flex-direction: row;
     padding-left: 20px;
     justify-content: center;
-    min-width: 50%;
+    width: 50%;
     
 }
 
@@ -380,7 +395,7 @@ max-height: 90%;
 .logoThird img{
     width: auto;
     padding:10px;
-    max-height: 90px;
+    max-height: 80px;
  
 }
 
@@ -422,7 +437,7 @@ max-height: 90%;
     margin-left: 5px;
     text-align: right;
     font-weight: bold;
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 @keyframes nudge {
