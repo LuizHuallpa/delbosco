@@ -8,10 +8,18 @@
 
 }
 
-section {
-    max-width: 100vw;
-
+form{
+    margin: 0;
+    padding: 0;
 }
+
+@media(min-width:780){
+    section {
+        max-width: 100vw;
+    
+    }
+}
+
 
 footer {
     max-width: 100vw;
@@ -61,20 +69,22 @@ footer {
 
 
 .textoPrincipal{
-    display: flex;
+   
     color: white;
     text-align: center;
     font-family: 'GlossAndBloom';
     font-size: 6rem;
     margin: auto;
     align-self: center;
+    justify-self: center;
     align-content: center;
     height: 100vh;
 }
 
-.textoPrincipal span{
+.textoPrincipal h1{
     margin: auto;
     padding: 20vw;
+    font-size: 6rem;
 }
 
 
@@ -181,6 +191,7 @@ footer {
     background-image: url("../images/Pagina4/Ativo 18.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: auto;
 }
 
 .containerLocal{

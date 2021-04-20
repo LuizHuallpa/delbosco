@@ -1,4 +1,6 @@
 .navbarTop {
+    position: absolute;
+
     width: 100%;
   
     display: flex;
@@ -35,7 +37,7 @@
   .logo {
     width: 20%;
   
-    height: auto;
+    height: 600px;
   }
   
   .logo img{
@@ -46,7 +48,7 @@
   .navbarFixa {
       width: 100%;
     
-      display: flex;
+      
     
       z-index: 99;
     
@@ -66,7 +68,7 @@
   
       display: flex;
   
-      align-items: center;
+      
   
     }
     
