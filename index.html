@@ -330,8 +330,8 @@
             <img src="/images/Pagina5/MapaImplantação.png" />
           </div>
           <div class="mapaDireito col-lg-6 col-sm-12">
-            <div class="tituloDireito">
-              <h2>Viva o Jardim Del Bosco!</h2>
+            <div class="tituloDireito text-center p-2">
+              <h2 >Viva o Jardim Del Bosco!</h2>
             </div>
             <div class="listaBosco">
               <ul class="lista">
@@ -355,11 +355,11 @@
         <div class="tituloPage6"><h2>Venha conhecer e se encantar</h2></div>
 
         <div class="formPai">
-          <div class="formulario">
+          <div class="formulario form">
             <div class="tituloForm">
               <h3>Solicite seu atendimento <strong>personalizado</strong></h3>
             </div>
-            <form>
+            <form class="form" id="contato" method="post"  action="<?=base_url('contato/email')?>" >
               <input
                 type="text"
                 class="itemForm"
@@ -368,7 +368,7 @@
               <input type="text" class="itemForm" placeholder="Email*" />
               <input type="text" class="itemForm" placeholder="Telefone*" />
               <div class="enviarRow">
-                <button type="button" class="enviar">Enviar</button>
+                <button type="submit" class="enviar">Enviar</button>
               </div>
             </form>
           </div>
