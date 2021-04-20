@@ -76,8 +76,11 @@ footer {
   font-size: 6rem;
 }
 
-.pageSection {
-  height: 90vh;
+
+@media (min-width:800px){
+    .pageSection {
+        height: 90vh;
+      }
 }
 
 .pageSection:first-of-type {
