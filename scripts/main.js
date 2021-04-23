@@ -1,10 +1,18 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction(), scrollFunctionWhats()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbarFixa").style.top = "0";
   } else {
     document.getElementById("navbarFixa").style.top = "-100px";
+  }
+}
+
+function scrollFunctionWhats() {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    document.getElementById("whatsFixo").style.display = "none";
+  } else {
+    document.getElementById("whatsFixo").style.display = "block";
   }
 }
 

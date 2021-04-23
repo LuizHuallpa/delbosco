@@ -26,12 +26,12 @@ footer {
 
 @font-face {
   font-family: "GlossAndBloom";
-  src: url("../fonts/Gloss_And_Bloom.ttf");
+  src: url("/public/fonts/Gloss_And_Bloom.ttf");
 }
 
 @font-face {
   font-family: "MonotypeCorsiva";
-  src: url("../fonts/MTCORSVA.TTF");
+  src: url("/public/fonts/MTCORSVA.TTF");
 }
 
 .snap {
@@ -56,31 +56,53 @@ footer {
   z-index: 100;
   animation: nudge 2s linear infinite;
   cursor: pointer;
+  max-width: 15vw;
+}
+
+.logoMobile{
+  position: absolute;
+  top: 60px;
+}
+
+.logoMobile img{
+  width: 33vw;
+}
+
+@media (min-width: 768px){
+  .logoMobile{
+    display:none;
+  }
+  
 }
 
 .textoPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
   font-family: "GlossAndBloom";
   font-size: 6rem;
-  margin: auto;
-  align-self: center;
-  justify-self: center;
-  align-content: center;
   height: 100vh;
+  width: 100vw;
 }
 
 .textoPrincipal h1 {
   margin: auto;
-  padding: 20vw;
   font-size: 6rem;
+  padding: 40px;
 }
 
+@media (max-width: 780px) {
+  .textoPrincipal h1 {
+    font-size: 4rem;
+  }
+}
 
-@media (min-width:800px){
-    .pageSection {
-        height: 90vh;
-      }
+@media (min-width: 800px) {
+  .pageSection {
+    height: 90vh;
+  }
 }
 
 .pageSection:first-of-type {
@@ -104,6 +126,17 @@ footer {
   overflow: auto;
 }
 
+.page2mobile {
+  display: none;
+  background-image: url("../images/Pagina2/3d2bgmobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+
 .sideText {
   display: flex;
   height: 100vh;
@@ -112,17 +145,31 @@ footer {
   border-radius: 0 50% 50% 0;
   font-family: "MonotypeCorsiva";
   font-size: 2.5rem;
-  /* padding-right: 1em;
-    padding-left: 20px;
-    padding-top: 20px; */
   z-index: 2;
   padding: 40px;
   padding-right: 60px;
 }
 
+.centerText {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "MonotypeCorsiva";
+  background-color: #fdc317;
+  font-size: 2rem;
+  z-index: 2;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+}
+
 @media (max-width: 770px) {
-  .sideText {
-    font-size: 1.5rem;
+  .page2 {
+    display: none;
+  }
+
+  .page2mobile {
+    display: flex;
   }
 }
 
@@ -264,6 +311,19 @@ footer {
   overflow: auto;
 }
 
+.mapaMobile{
+  display:none;
+}
+
+@media (max-width: 770px) {
+  .mapaDesk {
+    display:none;
+  }
+  .mapaMobile{
+    display:flex;
+  }
+}
+
 /* .containerMapa {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -288,11 +348,14 @@ footer {
   font-size: 5rem;
 }
 
-@media(max-width: 770px){
-    .tituloDireito h2 {
-        
-        font-size: 4.5rem;
-      }
+.areaComum img {
+  max-width: 90vw;
+}
+
+@media (max-width: 770px) {
+  .tituloDireito h2 {
+    font-size: 4.5rem;
+  }
 }
 
 .listaBosco {
@@ -303,12 +366,10 @@ footer {
   font-size: 3rem;
 }
 
-
-@media(max-width: 770px){
-    .listaBosco {
-        
-        font-size: 2.5rem;
-      }
+@media (max-width: 770px) {
+  .listaBosco {
+    font-size: 2.5rem;
+  }
 }
 
 ul {
@@ -383,6 +444,8 @@ ul {
   border-radius: 15px;
   min-height: 40px;
   justify-self: center;
+  text-align: center;
+  color: #222;
 }
 
 .socialMedia {
@@ -419,20 +482,6 @@ ul {
   padding-right: 20px;
 }
 
-@media (max-width: 700px) {
-  .telefones {
-    width: 100vw;
-    padding: 10px;
-    justify-content: center;
-    border-right: none;
-    margin: auto;
-  }
-
-  .logos {
-    width: 100vw;
-  }
-}
-
 .logos {
   height: 100%;
   display: flex;
@@ -440,6 +489,7 @@ ul {
   padding-left: 20px;
   justify-content: center;
   width: 50%;
+  align-items: center;
 }
 
 .logoThird {
@@ -455,24 +505,41 @@ ul {
   max-height: 80px;
 }
 
-@media (max-width: 770px) {
-  .logoThird img {
-    width: auto;
-    padding: 5px;
-    max-height: 60px;
-  }
-}
-
 .logo1 {
   margin-top: 5px;
 }
+
+@media (max-width: 770px) {
+  .telefones {
+    width: 100vw;
+    padding: 10px;
+    justify-content: center;
+    border-right: none;
+    margin: auto;
+  }
+
+  .logos {
+    width: 100vw;
+    padding-left:0;
+  }
+  .logoThird img {
+    width: auto;
+    max-height: 60px;
+  }
+
+  .logo1{
+    margin-top:0;
+  }
+}
+
+
 .vendas img {
   width: 80px;
 }
 
 .logoThird span {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
   justify-self: center;
 }
@@ -484,6 +551,10 @@ ul {
 .imgTel {
   height: auto;
   width: 50px;
+}
+
+.tel{ 
+  height:42px;
 }
 
 .fonesRow {
@@ -569,4 +640,12 @@ ul {
 
 footer {
   width: 100%;
+}
+
+.alert {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
 }

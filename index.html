@@ -27,8 +27,8 @@
   </head>
 
   <body>
-    <a href="https://web.whatsapp.com/send?phone=5535997043626"
-      ><img class="whatsIcon" src="images/Icones/Wpp.svg" target="_blank" />
+    <a id="whatsFixo" href="https://web.whatsapp.com/send?phone=5535997043626" target="_blank" 
+      ><img class="whatsIcon" src="images/Icones/Wpp.svg" />
     </a>
     <div class="">
       <section id="inicio" class="pageSection page1 snap">
@@ -57,12 +57,12 @@
           /></a>
           <!-- Navigation links (hidden by default) -->
           <div id="myLinks">
-            <div class="itemnav"><a href="#inicio">Início</a></div>
-            <div class="itemnav"><a href="#delBosco">O Del Bosco </a></div>
-            <div class="itemnav"><a href="#galeria">Galeria</a></div>
-            <div class="itemnav"><a href="#localizacao">Localização</a></div>
-            <div class="itemnav"><a href="#implantacao">Implantação</a></div>
-            <div class="itemnav"><a href="#contato">Contato</a></div>
+            <div class="itemnav"><a class="linkBurger" href="#inicio">Início</a></div>
+            <div class="itemnav"><a class="linkBurger" href="#delBosco">O Del Bosco </a></div>
+            <div class="itemnav"><a class="linkBurger" href="#galeria">Galeria</a></div>
+            <div class="itemnav"><a class="linkBurger" href="#localizacao">Localização</a></div>
+            <div class="itemnav"><a class="linkBurger" href="#implantacao">Implantação</a></div>
+            <div class="itemnav"><a class="linkBurger" href="#contato">Contato</a></div>
           </div>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           <a class="icon" class="burgerBar" onclick="burgerFunction()">
@@ -83,6 +83,9 @@
             <li><a href="#implantacao">Implantação</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
+        </div>
+        <div class="logoMobile">
+          <img class="imgLogo" src="images/Logo/logopng.png" />
         </div>
         <div class="textoPrincipal">
           <h1>Sinta o Privilégio da Natureza</h1>
@@ -109,6 +112,13 @@
           exclusivo somente com 20 chácaras próximo da represa
         </div>
         <img class="bordaFlores" src="images/Pagina3/Ativo 6.svg" />
+      </section>
+      <section class="pageSection page2mobile snap">
+        <div class="centerText">
+          Del Bosco fica localizado em uma região estratégica a apenas 70Km a
+          São Paulo (Capital) na cidade de Nazaré Paulista, um condomínio
+          exclusivo somente com 20 chácaras próximo da represa
+        </div>
       </section>
       <div class="anchor" id="galeria"></div>
       <section class="page3 snap">
@@ -324,7 +334,7 @@
         </div>
       </section>
       <div class="anchor" id="implantacao"></div>
-      <section class="pageSection page5 snap">
+      <section class="pageSection page5 mapaDesk snap">
         <div class="container">
           <div class="mapaEsquerdo col-lg-6 col-sm-12">
             <img src="/images/Pagina5/MapaImplantação.png" />
@@ -350,16 +360,43 @@
           </div>
         </div>
       </section>
+      <div class="anchor" id="implantacao"></div>
+      <section class="pageSection page5 mapaMobile snap">
+        <div class="container">
+          <div class="tituloDireito text-center p-2">
+            <h2 >Viva o Jardim Del Bosco!</h2>
+          </div>
+          <div class="mapaEsquerdo col-lg-6 col-sm-12">
+            <img src="/images/Pagina5/MapaImplantação.png" />
+          </div>
+          <div class="mapaDireito col-lg-6 col-sm-12">
+            <div class="listaBosco">
+              <ul class="lista">
+                <li>Condomínio Rural</li>
+                <li><strong>Exclusivo</strong> com apenas 20 Chácaras</li>
+                <li>
+                  De <strong>20.000m²</strong> a <strong>49.600 m²</strong>
+                </li>
+                <li>Com <strong>2 lagos</strong> internos</li>
+                <li>E com áreas comuns equipadas</li>
+              </ul>
+            </div>
+            <div class="areaComum">
+              <img src="/images/Pagina5/Imagem2.png" />
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="anchor" id="contato"></div>
       <footer class="page6 snap">
         <div class="tituloPage6"><h2>Venha conhecer e se encantar</h2></div>
 
-        <div class="formPai">
+        <form class="formPai" id="contato" method="post"  action="<?=base_url('contato/email')?>" >
           <div class="formulario form">
             <div class="tituloForm">
               <h3>Solicite seu atendimento <strong>personalizado</strong></h3>
             </div>
-            <form class="form" id="contato" method="post"  action="<?=base_url('contato/email')?>" >
+            <!-- <form class="form" id="contato" method="post"  action="<?=base_url('contato/email')?>" > -->
               <input
                 type="text"
                 class="itemForm"
@@ -372,7 +409,7 @@
               </div>
             </form>
           </div>
-        </div>
+        </form>
 
         <div class="socialMedia">
           <div>
@@ -388,11 +425,11 @@
           <div class="telefones">
             <div class="fonesRow">
               <span>35 99704 3626</span
-              ><img class="imgTel" src="images/Icones/Wpp.svg" />
+              ><a href="https://web.whatsapp.com/send?phone=5535997043626" target="_blank"><img class="imgTel" src="images/Icones/Wpp.svg" /></a>
             </div>
             <div class="fonesRow">
               <span>19 3844 5654</span
-              ><img class="imgTel" src="images/Icones/telefone.svg" />
+              ><img class="imgTel tel" src="images/Icones/telefone.svg" />
             </div>
           </div>
           <div class="logos">

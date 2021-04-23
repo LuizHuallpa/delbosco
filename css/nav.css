@@ -48,8 +48,6 @@
   .navbarFixa {
       width: 100%;
     
-      
-    
       z-index: 99;
     
       font-family: 'MonotypeCorsiva';
@@ -117,10 +115,15 @@
         width: 100%;
         display: none;
         z-index: 10000;
+        
     }
     
     .topnavBurger img {
-        height: 5vh;
+        max-height: 5vh;
+    }
+
+    .fa-bars{
+        height: 100%;
     }
     
     @media (max-width:900px) {
@@ -176,7 +179,7 @@
     }
 
     .burgerBar{
-        height:8vh;
+        height:50px;
     }
 
 
